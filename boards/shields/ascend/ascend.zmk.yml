@@ -1,0 +1,12 @@
+file_format: "1"
+id: ascend
+name: ascend
+type: shield
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+siblings:
+  - ascend_left
+  - ascend_right

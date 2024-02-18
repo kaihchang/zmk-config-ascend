@@ -1,0 +1,3 @@
+.conf and .keymap files here override any configuration set in the board or shield folders.
+
+About _left.conf and _right.conf: if a shared config file exists, any left or right files will be ignored.

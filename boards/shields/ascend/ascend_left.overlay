@@ -1,0 +1,15 @@
+#include "ascend.dtsi"
+
+&kscan0 {
+    col-gpios
+        = <&gpio0 24 GPIO_ACTIVE_HIGH> // Col 0_l
+        , <&gpio1 0 GPIO_ACTIVE_HIGH> // Col 1_l
+        , <&gpio0 11 GPIO_ACTIVE_HIGH> // Col 2_l
+        , <&gpio1 4 GPIO_ACTIVE_HIGH> // Col 3_l
+        , <&gpio1 6 GPIO_ACTIVE_HIGH> // Col 4_l
+        ;
+};
+
+&left_encoder {
+    status = "okay";
+};
