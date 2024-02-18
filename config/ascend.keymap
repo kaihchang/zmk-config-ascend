@@ -153,7 +153,7 @@
         };
 
         right_layer {
-            display-name = "$";
+            display-name = "!@#$%";
 
             bindings = <
            &kp LA(LS(B))    &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LC(EXCLAMATION)      &kp TILDE  &kp PLUS        &kp MINUS      &cnq_macro        &sys_reset
