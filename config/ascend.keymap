@@ -132,13 +132,6 @@
             hold-trigger-key-positions = <21>;
         };
 
-        behavior_scroll: behavior_scroll {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "BEHAVIOR_SCROLL";
-            #sensor-binding-cells = <2>;
-            bindings = <&mwh>, <&mwh>;
-        };
-
         behavior_bluetooth: behavior_bluetooth {
             compatible = "zmk,behavior-sensor-rotate-var";
             label = "BEHAVIOR_BLUETOOTH";
