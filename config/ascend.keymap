@@ -135,7 +135,7 @@
                                  &sl 1               &kp LEFT_SHIFT  &kp C_PLAY_PAUSE    &trans  &lt 3 SPACE  &sl 2
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
 
         left_layer {
@@ -147,7 +147,7 @@
                                            &to 0             &kp F12           &kp C_PLAY_PAUSE    &trans         &kp NUMBER_0  &kp DOT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
 
         right_layer {
@@ -159,7 +159,7 @@
                                                &to 0                  &trans           &kp C_PLAY_PAUSE       &trans     &trans          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
 
         nav_layer {
@@ -171,7 +171,7 @@
                                 &to 0       &trans   &kp C_PLAY_PAUSE    &trans           &trans             &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
 
         gaming_layer {
@@ -183,7 +183,7 @@
                                          &kp LEFT_ALT  &kp A         &kp C_PLAY_PAUSE    &trans  &kp Z     &kp X
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
