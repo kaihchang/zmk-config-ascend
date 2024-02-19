@@ -132,14 +132,6 @@
             hold-trigger-key-positions = <21>;
         };
 
-        behavior_bluetooth: behavior_bluetooth {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "BEHAVIOR_BLUETOOTH";
-            #sensor-binding-cells = <2>;
-            bindings = <&bt>, <&bt>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -153,8 +145,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
-                <&inc_dec_kp PG_UP PG_DN>;
+                <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
 
         left_layer {
@@ -167,8 +158,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
-                <&inc_dec_kp TAB LS(TAB)>;
+                <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp TAB LS(TAB)>;
         };
 
         right_layer {
@@ -181,8 +171,7 @@
             >;
 
             sensor-bindings =
-                <&behavior_bluetooth BT_NXT BT_PRV>,
-                <&inc_dec_kp PG_UP PG_DN>;
+                <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
 
         nav_layer {
@@ -195,8 +184,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp LC(PAGE_DOWN) LC(PAGE_UP)>,
-                <&inc_dec_kp LA(LS(TAB)) LA(TAB)>;
+                <&inc_dec_kp LC(PAGE_DOWN) LC(PAGE_UP) &inc_dec_kp LA(LS(TAB)) LA(TAB)>;
         };
 
         gaming_layer {
@@ -209,8 +197,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
-                <&inc_dec_kp PG_UP PG_DN>;
+                <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
