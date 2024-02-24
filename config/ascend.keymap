@@ -144,25 +144,29 @@
         default_layer {
             display-name = "O";
             bindings = <
-       &ext_power EP_TOG  &kp W  &kp F               &kp P           &kp G               &kp J   &kp L        &kp U                               &kp Y                              &sys_reset
-&kp Q  &kp A              &kp R  &mt LEFT_CONTROL S  &kp T           &kp D               &kp H   &kp N        &kp E                               &kp I                              &kp O       &kp SQT
-       &kp Z              &kp X  &kp C               &kp V           &kp B               &kp K   &kp M        &holdtap_comma LA(LC(COMMA)) COMMA  &holdtap_period LG(PERIOD) PERIOD  &kp FSLH
-                                 &sl 1               &kp LEFT_SHIFT  &kp C_PLAY_PAUSE    &trans  &lt 3 SPACE  &sl 2
+       &trans  &kp W  &kp F               &kp P           &kp G               &kp J   &kp L        &kp U                               &kp Y                              &trans
+&kp Q  &kp A   &kp R  &mt LEFT_CONTROL S  &kp T           &kp D               &kp H   &kp N        &kp E                               &kp I                              &kp O     &kp SQT
+       &kp Z   &kp X  &kp C               &kp V           &kp B               &kp K   &kp M        &holdtap_comma LA(LC(COMMA)) COMMA  &holdtap_period LG(PERIOD) PERIOD  &kp FSLH
+                      &sl 1               &kp LEFT_SHIFT  &kp C_PLAY_PAUSE    &trans  &lt 3 SPACE  &sl 2
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>,
+                <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         left_layer {
             display-name = "123";
             bindings = <
-         &kp LS(LG(S))  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp C_PLAY_PAUSE  &to 4         &kp BACKSPACE  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &sys_reset
-&kp TAB  &sk LEFT_META  &sk LEFT_ALT       &sk LEFT_CONTROL  &sk LEFT_SHIFT    &kp DELETE    &kp MINUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &holdtap_equal_enter ENTER EQUAL
-         &kp LG(TAB)    &kp LA(LS(TAB))    &kp LA(TAB)       &kp F5            &kp F8        &kp PLUS       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp FSLH
-                                           &to 0             &kp F12           &bt BT_CLR    &trans         &kp NUMBER_0  &kp DOT
+         &ext_power EP_TOG  &trans           &trans            &kp LS(LG(S))   &to 4         &kp BACKSPACE  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &sys_reset
+&kp TAB  &sk LEFT_META      &sk LEFT_ALT     &sk LEFT_CONTROL  &sk LEFT_SHIFT  &kp DELETE    &kp MINUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &holdtap_equal_enter ENTER EQUAL
+         &kp LG(TAB)        &kp LA(LS(TAB))  &kp LA(TAB)       &kp F5          &kp F8        &kp PLUS       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp FSLH
+                                             &to 0             &kp F12         &bt BT_CLR    &kp LG(TAB)    &kp NUMBER_0  &kp DOT
             >;
 
-            sensor-bindings = <&behavior_bluetooth>, <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&behavior_bluetooth>,
+                <&inc_dec_kp LA(LS(TAB)) LA(TAB)>;
         };
 
         right_layer {
@@ -174,7 +178,9 @@
                                                &to 0                  &trans           &kp C_PLAY_PAUSE       &trans     &trans          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>,
+                <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         nav_layer {
@@ -187,7 +193,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>,
                 <&inc_dec_kp LA(RIGHT) LA(LEFT)>;
         };
 
