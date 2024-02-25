@@ -75,19 +75,14 @@
 
         combo_backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <6 7>;
+            key-positions = <7 8>;
             timeout-ms = <50>;
         };
 
         combo_delete {
             bindings = <&kp DELETE>;
-            key-positions = <7 8>;
+            key-positions = <4 15>;
             timeout-ms = <50>;
-        };
-
-        combo_copy {
-            bindings = <&kp LC(C)>;
-            key-positions = <24 25>;
         };
     };
 
@@ -152,8 +147,7 @@
                       &sl 1               &kp LEFT_SHIFT  &kp C_PLAY_PAUSE    &trans  &lt 3 SPACE  &sl 2
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP &inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP &inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         left_layer {
@@ -165,8 +159,7 @@
                                              &to 0             &kp F12         &bt BT_CLR    &kp LG(TAB)    &kp NUMBER_0  &kp DOT
             >;
 
-            sensor-bindings =
-                <&behavior_bluetooth &inc_dec_kp LA(TAB) LA(LS(TAB))>;
+            sensor-bindings = <&behavior_bluetooth &inc_dec_kp LA(TAB) LA(LS(TAB))>;
         };
 
         right_layer {
@@ -178,8 +171,7 @@
                                                &to 0                  &trans           &kp C_PLAY_PAUSE       &trans     &trans          &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP &inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP &inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         nav_layer {
@@ -191,8 +183,7 @@
                                 &to 0       &trans   &kp C_PLAY_PAUSE    &trans    &trans         &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP &inc_dec_kp LA(RIGHT) LA(LEFT)>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP &inc_dec_kp LA(RIGHT) LA(LEFT)>;
         };
 
         gaming_layer {
