@@ -153,10 +153,10 @@
         left_layer {
             display-name = "123";
             bindings = <
-         &ext_power EP_TOG  &trans           &trans            &kp LS(LG(S))   &to 4         &kp BACKSPACE  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &sys_reset
-&kp TAB  &sk LEFT_META      &sk LEFT_ALT     &sk LEFT_CONTROL  &sk LEFT_SHIFT  &kp DELETE    &kp MINUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &holdtap_equal_enter ENTER EQUAL
-         &kp LG(TAB)        &kp LA(LS(TAB))  &kp LA(TAB)       &kp F5          &kp F8        &kp PLUS       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp FSLH
-                                             &to 0             &kp F12         &bt BT_CLR    &kp LG(TAB)    &kp NUMBER_0  &kp DOT
+         &ext_power EP_TOG  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp LS(LG(S))   &to 4         &kp BACKSPACE  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &sys_reset
+&kp TAB  &sk LEFT_META      &sk LEFT_ALT       &sk LEFT_CONTROL   &sk LEFT_SHIFT  &kp LA(F4)    &kp MINUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &holdtap_equal_enter ENTER EQUAL
+         &kp LA(TAB)        &kp LC(PAGE_UP)    &kp LC(PAGE_DOWN)  &mkp MB4        &mkp MB5      &kp PLUS       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp FSLH
+                                               &to 0              &kp LG(TAB)     &bt BT_CLR    &kp LG(TAB)    &kp NUMBER_0  &kp DOT
             >;
 
             sensor-bindings = <&behavior_bluetooth &inc_dec_kp LA(TAB) LA(LS(TAB))>;
