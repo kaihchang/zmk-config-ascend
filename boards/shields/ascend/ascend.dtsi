@@ -5,6 +5,7 @@
         zephyr,display = &oled;
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
+        zmk,battery = &vbatt; // which battery sensor driver to use
     };
 
     default_transform: keymap_transform_0 {
@@ -30,6 +31,10 @@
             , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 2_l
             , <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 3_l
             ;
+    };
+
+    vbatt: vbatt { // use NRF's VDDH pin
+        compatible = "zmk,battery-nrf-vddh";
     };
 
     left_encoder: encoder_left {
