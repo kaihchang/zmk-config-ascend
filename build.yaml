@@ -22,3 +22,5 @@ include:
     shield: ascend_left
   - board: nice_nano_v2
     shield: ascend_right
+  - board: nice_nano_v2
+    shield: settings_reset
