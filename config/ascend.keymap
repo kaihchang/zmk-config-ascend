@@ -167,7 +167,7 @@
             bindings = <
            &kp LA(LS(B))    &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LC(EXCLAMATION)    &kp TILDE  &kp PLUS        &kp MINUS      &cnq_macro        &sys_reset
 &kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN        &kp HASH               &kp DOLLAR       &kp PERCENT            &kp CARET  &kp AMPERSAND   &kp LESS_THAN  &kp GREATER_THAN  &kp ASTERISK  &kp EQUAL
-           &kp BACKSLASH    &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp LC(QUESTION)       &kp PIPE   &kp UNDERSCORE  &kp SEMICOLON  &kp COLON         &kp QUESTION
+           &kp BACKSLASH    &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp LA(LS(B))          &kp PIPE   &kp UNDERSCORE  &kp SEMICOLON  &kp COLON         &kp QUESTION
                                                &to 0                  &trans           &kp C_PLAY_PAUSE       &trans     &trans          &trans
             >;
 
@@ -191,8 +191,8 @@
         gaming_layer {
             display-name = "GAME";
             bindings = <
-         &kp B             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp P               &to 0   &trans    &kp UP    &trans     &sys_reset
-&kp TAB  &kp LEFT_CONTROL  &kp Q         &kp W         &kp E         &kp R               &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans      &trans
+         &kp B             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp P               &to 0   &trans    &kp UP    &trans     &kp F12
+&kp TAB  &kp LEFT_CONTROL  &kp Q         &kp W         &kp E         &kp R               &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans   &trans
          &kp H             &kp NUMBER_4  &kp S         &kp D         &kp F               &trans  &trans    &trans    &trans     &trans
                                          &kp LEFT_ALT  &kp A         &kp C_PLAY_PAUSE    &trans  &kp Z     &kp X
             >;
