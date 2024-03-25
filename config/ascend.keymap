@@ -139,7 +139,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "O";
+            display-name = "base";
             bindings = <
        &kp ESCAPE  &kp W  &kp F               &kp P           &kp G               &kp J   &kp L        &kp U                               &kp Y                              &kp BACKSPACE
 &kp Q  &kp A       &kp R  &mt LEFT_CONTROL S  &kp T           &kp D               &kp H   &kp N        &kp E                               &kp I                              &kp O          &kp SQT
